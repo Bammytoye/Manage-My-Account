@@ -40,8 +40,8 @@ const Manage = () => {
 
     return (
         <div className="">
-            <div className="container flex mx-auto mb-10">
-                <div className="mx-auto py-8 px-2 w-[350px]">
+            <div className="container flex flex-col md:flex-row mx-auto mb-10">
+                <div className="mx-auto py-8 px-2 w-[350px] md:text-center">
                     <div>
                         <h2 className="font-semibold">Manage My Account</h2>
                         <ul className="px-8 text-gray-500 leading-6 text-[14px]">
@@ -77,6 +77,7 @@ const Manage = () => {
                     </div>
                 </div>
 
+{/* edit profile */}
                 <div className="border-2 rounded-sm shadow-xl mx-16 mt-10 pt-10 pb-10">
                     <div className="mx-16">
                         <div>
@@ -114,8 +115,8 @@ const Manage = () => {
                     </div>
 
                     <div className="mt-5 flex justify-end me-16">
-                        <button onClick={cancel} className="mx-4 py-2 px-10 border rounded bg-white-100 hover:bg-red-500">Cancel</button>
-                        <button onClick={saveChanges} className="py-2 px-10 border rounded bg-red-600 text-white"> Save Changes</button>
+                        <button onClick={cancel} className="mx-4 py-2 px-10 sm:px-5 border rounded bg-white-100 hover:bg-red-500">Cancel</button>
+                        <button onClick={saveChanges} className="py-2 px-10 sm:px-5 border rounded bg-red-600 text-white"> Save Changes</button>
                     </div>
                 </div>
             </div>
